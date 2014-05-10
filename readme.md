@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 42/151
+> 45/151
 
 Other Solutions
 ---------------
