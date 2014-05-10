@@ -16,6 +16,9 @@ Peter norvig神牛Python代码写的很飘逸,果然是有LISP内功的人!
 [Udacity CS212](https://www.udacity.com/course/viewer#!/c-cs212)  
 [Solving Every Sudoku Puzzle](http://norvig.com/sudoku.html)  
 
+[Binary Search Tree In-Order Traversal Iterative Solution](http://leetcode.com/2010/04/binary-search-tree-in-order-traversal.html)  
+[Binary Tree Post-Order Traversal Iterative Solution](http://leetcode.com/2010/10/binary-tree-post-order-traversal.html)  
+
 [进军硅谷: 程序员面试揭秘](http://book.douban.com/subject/25844586/) 本书涉嫌抄袭leetcode,特此注明  
 
 题目分类
@@ -162,8 +165,11 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 TODO
 ----
 
-* iterative tree-like struct traverse  
-* 整理word break和word break II的资料，写一篇blog  
+- [ ] iterative tree-like struct traverse  
+    - [x] write code  
+    - [ ] read [Binary Search Tree In-Order Traversal Iterative Solution],[Binary Tree Post-Order Traversal Iterative Solution]  
+    - [ ] *dsalgo* rec to iter
+- [ ] 整理word break和word break II的资料，写一篇blog  
     - *Top down* **memoization** VS *Bottom up* **Dynamic Programming**  
     * [Earley parser](http://en.wikipedia.org/wiki/Earley_parser)  
         + 分词[1](http://www.matrix67.com/blog/archives/4212),[2](http://www.matrix67.com/blog/archives/4870),[3](http://www.matrix67.com/blog/archives/5044)  
@@ -171,4 +177,4 @@ TODO
     + review Udacity *CS212* and Udacity *Programming Languages*  
         + Gramma from *CS212*  
         + Earley parser implementaion from *Programming Languages*;  [another python implemetation](https://github.com/tomerfiliba/tau/blob/master/earley3.py)  
-* 刷过的题目整理丢github  
+- [ ] 刷过的题目整理丢github  
