@@ -16,15 +16,15 @@ Peter norvig神牛Python代码写的很飘逸,果然是有LISP内功的人!
 [Udacity CS212](https://www.udacity.com/course/viewer#!/c-cs212)  
 [Solving Every Sudoku Puzzle](http://norvig.com/sudoku.html)  
 
-[Binary Search Tree In-Order Traversal Iterative Solution](http://leetcode.com/2010/04/binary-search-tree-in-order-traversal.html)  
-[Binary Tree Post-Order Traversal Iterative Solution](http://leetcode.com/2010/10/binary-tree-post-order-traversal.html)  
+[Binary Search Tree In-Order Traversal Iterative Solution][inOrder]
+[Binary Tree Post-Order Traversal Iterative Solution][postOrder]
 
 [进军硅谷: 程序员面试揭秘](http://book.douban.com/subject/25844586/) 本书涉嫌抄袭leetcode,特此注明  
 
 题目分类
 --------
 from http://blog.csdn.net/fightforyourdream/article/details/12705509
->   ###Dynamic Programming
+###Dynamic Programming
 >   Edit Distance  
 >   Maximum Subarray  
 >   Minimum Path Sum  
@@ -38,7 +38,8 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 >   Palindrome Partitioning II  
 >   Maximal Rectangle  
   
->   ###Recursion  
+
+###Recursion  
 >   N-Queens  
 >   N-Queens II  
 >   Balanced Binary Tree  
@@ -76,14 +77,16 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 >   Sudoku Solver  
 >   Unique Binary Search Trees II  
   
->   ###Binary Search    
+
+###Binary Search    
 >   Search Insert Position  
 >   Search a 2D Matrix  
 >   Search for a Range  
 >   Search in Rotated Sorted Array
 >   Sqrt(x)  
   
->   ###Sequence  
+
+###Sequence  
 >   Container With Most Water  
 >   Count and Say  
 >   First Missing Positive  
@@ -119,7 +122,8 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 >   Trapping Rain Water  
 >   Valid Number  
   
->   ###Linked List  
+
+###Linked List  
 >   Add Two Numbers  
 >   Convert Sorted List to Binary Search Tree  
 >   Merge Two Sorted Lists  
@@ -132,12 +136,14 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 >   Rotate List  
 >   Swap Nodes in Pairs  
   
->   ###Stack  
+
+###Stack  
 >   Binary Tree Inorder Traversal  
 >   Binary Tree Level Order Traversal II  
 >   Valid Parentheses  
   
->   ###Queue  
+
+###Queue  
 >   Binary Tree Level Order Traversal  
 >   Binary Tree Level Order Traversal II  
 >   Populating Next Right Pointers in Each Node II  
@@ -145,7 +151,8 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 >   Surrounded Regions  
 >   Word Ladder  
   
->   ###Tree  
+
+###Tree  
 >   Balanced Binary Tree  
 >   Binary Tree Inorder Traversal  
 >   Binary Tree Level Order Traversal  
@@ -177,4 +184,7 @@ TODO
     + review Udacity *CS212* and Udacity *Programming Languages*  
         + Gramma from *CS212*  
         + Earley parser implementaion from *Programming Languages*;  [another python implemetation](https://github.com/tomerfiliba/tau/blob/master/earley3.py)  
-- [ ] 刷过的题目整理丢github  
+- [x] 刷过的题目整理丢github  
+
+[inOrder]:http://leetcode.com/2010/04/binary-search-tree-in-order-traversal.html
+[postOrder]:http://leetcode.com/2010/10/binary-tree-post-order-traversal.html
