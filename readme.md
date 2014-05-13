@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 45/151
+> 51/151
 
 Other Solutions
 ---------------
@@ -174,10 +174,11 @@ TODO
 
 - [ ] iterative tree-like struct traverse  
     - [x] write code  
-    - [ ] read [Binary Search Tree In-Order Traversal Iterative Solution],[Binary Tree Post-Order Traversal Iterative Solution]  
+    - [ ] read [Binary Search Tree In-Order Traversal Iterative Solution][inOrder],[Binary Tree Post-Order Traversal Iterative Solution][postOrder]  
     - [ ] *dsalgo* rec to iter
+    - [ ] [BST iterator](http://oj.leetcode.com/discuss/281/how-solve-this-problem-validate-binary-search-tree-iterative)
 - [ ] 整理word break和word break II的资料，写一篇blog  
-    - *Top down* **memoization** VS *Bottom up* **Dynamic Programming**  
+    - *Top down* **memoization** VS *Bottom up* **Dynamic Programming**: check DP implemetation  
     * [Earley parser](http://en.wikipedia.org/wiki/Earley_parser)  
         + 分词[1](http://www.matrix67.com/blog/archives/4212),[2](http://www.matrix67.com/blog/archives/4870),[3](http://www.matrix67.com/blog/archives/5044)  
         + parsing  
