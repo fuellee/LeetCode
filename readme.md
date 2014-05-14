@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 51/151
+> 54/151
 
 Other Solutions
 ---------------
@@ -186,6 +186,7 @@ TODO
         + Gramma from *CS212*  
         + Earley parser implementaion from *Programming Languages*;  [another python implemetation](https://github.com/tomerfiliba/tau/blob/master/earley3.py)  
 - [x] 刷过的题目整理丢github  
+- [ ] `Populating_Next_Right_Pointers_in_Each_Node.cpp` too slow and looks bad for myself, check other's [implemetation](http://leetcode.com/2010/03/first-on-site-technical-interview.html)  
 
 [inOrder]:http://leetcode.com/2010/04/binary-search-tree-in-order-traversal.html
 [postOrder]:http://leetcode.com/2010/10/binary-tree-post-order-traversal.html
