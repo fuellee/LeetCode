@@ -23,36 +23,16 @@ struct TreeNode {
 class Solution {
     TreeNode *pre=nullptr;
 public:
-    // TreeNode* flatten(TreeNode *root) {
-    //     if(root==nullptr) return root;
-    //     else{
-    //         // cout<<root->val<<endl;
-    //         if(root->left) {
-    //             auto right = root->right;
-    //             auto ltail = flatten(root->left);
-    //             if(ltail)
-    //                 ltail->right = right;
-    //             root->right = root->left;
-    //             root->left = nullptr; ///
-    //             return flatten(right);
-    //         }
-    //         else if(root->right) {
-    //             return flatten(root->right);
-    //         }
-    //         else return root;
-    //     }
-    // } 
     void flatten(TreeNode *root) {
         if(root==nullptr) return;
-        
+        auto left=root->left,right=root->right;
         if(pre) {
             pre->right = root;
             pre->left = nullptr;
         }
         pre = root;
-        cout<<root->val<<endl;
-        flatten(root->left);
-        flatten(root->right);
+        flatten(left);
+        flatten(right);
     }
 };
 int main() {
