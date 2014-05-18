@@ -4,7 +4,7 @@ using namespace std;
 struct ListNode {
     int val;
     ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+    ListNode(int x, ListNode *next=nullptr) : val(x), next(next) {}
 };
 
 class Solution {
@@ -12,9 +12,10 @@ class Solution {
 public:
     ListNode *deleteDuplicates(ListNode *head) {
        if(head==nullptr) return head;
+       bool inDuplicates=false;
        dumy->next = head;
        ListNode *pre = dumy, *cur = head;
-       int preval;
+       int val=
        while(cur->next != nullptr){
             if(cur->next->val==cur->val){
 
