@@ -12,25 +12,35 @@ class Solution:
             return 0
         elif len(points)==1:
             return 1
-        dirCount = {}
+        lineCount = {}
+
+        # all lines
         for i in range(len(points)-1):
             for j in range(i+1,len(points)):
                 dx = float(points[i].x-points[j].x)
                 dy = float(points[i].y-points[j].y)
 
                 if dx==0:
-                    line = points[i].x
+                    line = (None,points[i].x)
                 else:
                     slope = dy/dx
                     y0 = points[i].y - points[i].x*slope
                     line = (y0, slope)
 
-                if line not in dirCount:
-                    dirCount[line]=2
-                else:
-                    dirCount[line]+=1
-        print dirCount
-        return max(dirCount.values())
+                lineCount[line]=0
+
+        # check each point for every line
+        for p in points:
+            for (y0,slope) in lineCount:
+                if y0==None:
+                    if p.x==slope:
+                        lineCount[(y0,slope)]+=1
+                elif p.x!=0 and float(p.y-y0)/p.x==slope:
+                    lineCount[(y0,slope)]+=1
+                elif p.x==0 and p.y!=y0 and slope!=0 and p.x/float(p.y-y0)==1/slope:
+                    lineCount[(y0,slope)]+=1
+
+        return max(lineCount.values())
 
 points = [Point(),Point()]
 s=Solution()

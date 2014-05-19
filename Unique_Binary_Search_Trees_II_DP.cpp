@@ -23,6 +23,7 @@ struct TreeNode {
 };
 
 class Solution {
+    vector<TreeNode *>* DP[10][10];
     vector<TreeNode *>* gen(int start,int end) {
         // if(cache.find({start,end})!=cache.end()) return cache[{start,end}];
 
