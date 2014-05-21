@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 75/151
+> 78/151
 
 Other Solutions
 ---------------
@@ -173,6 +173,7 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 TODO
 ----
 
+- [ ] `Two_Sum.py` better solution?
 - [ ] `Unique_Binary_Search_Trees_II_DP.cpp`
 - [ ] `Sort_Colors_1pass.cpp `
 - [ ] `Linked_List_Cycle_II.cpp` review,discuss
