@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 71/151
+> 75/151
 
 Other Solutions
 ---------------
@@ -176,6 +176,7 @@ TODO
 - [ ] `Unique_Binary_Search_Trees_II_DP.cpp`
 - [ ] `Sort_Colors_1pass.cpp `
 - [ ] `Linked_List_Cycle_II.cpp` review,discuss
+- [ ] `Simplify_Path.py` cpp version
 - [ ] iterative tree-like struct traverse  
     - [x] write code  
     - [ ] read [Binary Search Tree In-Order Traversal Iterative Solution][inOrder],[Binary Tree Post-Order Traversal Iterative Solution][postOrder]  
@@ -191,7 +192,7 @@ TODO
         + Gramma from *CS212*  
         + Earley parser implementaion from *Programming Languages*;  [another python implemetation](https://github.com/tomerfiliba/tau/blob/master/earley3.py)  
 - [x] 刷过的题目整理丢github  
-- [ ] `Populating_Next_Right_Pointers_in_Each_Node.cpp` too slow and looks bad for myself, check other's [implemetation](http://leetcode.com/2010/03/first-on-site-technical-interview.html)  
+- [x] `Populating_Next_Right_Pointers_in_Each_Node.cpp` too slow and looks bad for myself, check other's [implemetation](http://leetcode.com/2010/03/first-on-site-technical-interview.html)  
 
 [inOrder]:http://leetcode.com/2010/04/binary-search-tree-in-order-traversal.html
 [postOrder]:http://leetcode.com/2010/10/binary-tree-post-order-traversal.html
