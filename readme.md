@@ -3,13 +3,14 @@ LeetCode
 
 Progress
 --------
-> 80/151
+> 84/151
 
 Other Solutions
 ---------------
 - [Code_Ganker](http://blog.csdn.net/linhuanmars?viewmode=contents)  
 + [iphkwan](https://github.com/iphkwan/leetcode)  
 + [fanfank](https://github.com/fanfank/leetcode)  
+- *python* [kitt's blog](http://chaoren.is-programmer.com/categories/9841/posts)  
 
 Associated Documents and Resources
 ----------------------------------
@@ -173,12 +174,15 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 TODO
 ----
 
-- [ ] `Combination_Sum_tailcall_opt.cpp` too slow
-- [ ] `Two_Sum.py` better solution?
-- [ ] `Unique_Binary_Search_Trees_II_DP.cpp`
-- [ ] `Sort_Colors_1pass.cpp `
-- [ ] `Linked_List_Cycle_II.cpp` review,discuss
-- [ ] `Simplify_Path.py` cpp version
+- [ ] `Word_Search.py` 和 `Word_Search_copyPath.py` 以及 cpp 版本整理写一篇blog. DFS状态，复制/共享<=>面向过程/函数式<=>效率/简洁   
+- [ ] `Generate_Parentheses_bruteForce.py` why insert `()` every where make all valid parentheses?  
+- [ ] `Combination_Sum_II.cpp` condition not understand  
+- [ ] `Combination_Sum_tailcall_opt.cpp` too slow  
+- [ ] `Two_Sum.py` better solution?  
+- [ ] `Unique_Binary_Search_Trees_II_DP.cpp`  
+- [ ] `Sort_Colors_1pass.cpp `  
+- [ ] `Linked_List_Cycle_II.cpp` review,discuss  
+- [ ] `Simplify_Path.py` cpp version  
 - [ ] iterative tree-like struct traverse  
     - [x] write code  
     - [ ] read [Binary Search Tree In-Order Traversal Iterative Solution][inOrder],[Binary Tree Post-Order Traversal Iterative Solution][postOrder]  

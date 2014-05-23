@@ -6,25 +6,26 @@
 #
 # Distributed under terms of the MIT license.
 class Solution:
-    # @param candidates, a list of integers
+    # @param num, a list of integers
     # @param target, integer
     # @return a list of lists of integers
-    def combinationSum2(self, candidates, target):
-        candidates.sort(reverse=True)
+    def combinationSum2(self, num, target):
+        num.sort()
         res = []
-        last = len(candidates)-1
-        def comS(acc,sum, i):
-            if sum==target:
+        n = len(num)
+        def comS(start,acc,target):
+            if target==0:
                 res.append(acc)
-            elif i>last or sum>target:
+            elif start>=n or target<0:
                 return
             else:
-                comS(acc+[candidates[i]],sum+candidates[i],i+1)
-                comS(acc,sum,i+1)
+                for i in range(start,n):
+                    if(i==start or num[i]!=num[i-1]):
+                        comS(i+1,acc+[num[i]],target-num[i])
 
-        comS([],0,0)
+        comS(0,[],target)
         return res
 
-# print Solution().combinationSum2([10,1,2,7,6,1,5],8)
+print Solution().combinationSum([2,3,6,7],7)
 # print Solution().combinationSum2([1],1)
-print Solution().combinationSum2([1,1], 1)
+print Solution().combinationSum([1,1,1,1,2], 2)
