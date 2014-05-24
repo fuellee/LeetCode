@@ -3,13 +3,13 @@ LeetCode
 
 Progress
 --------
-> 86/151
+> 88/151
 
 Other Solutions
 ---------------
 - [Code_Ganker](http://blog.csdn.net/linhuanmars?viewmode=contents)  
-+ [iphkwan](https://github.com/iphkwan/leetcode)  
-+ [fanfank](https://github.com/fanfank/leetcode)  
+- [iphkwan](https://github.com/iphkwan/leetcode)  
+- [fanfank](https://github.com/fanfank/leetcode)  
 - *python* [kitt's blog](http://chaoren.is-programmer.com/categories/9841/posts)  
 
 Associated Documents and Resources
