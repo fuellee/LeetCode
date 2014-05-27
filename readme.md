@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 90/151
+> 92/151
 
 Other Solutions
 ---------------
@@ -176,7 +176,7 @@ TODO
 
 - [ ] `First_Missing_Positive.cpp` review  
 - [ ] `Best_Time_to_Buy_and_Sell_Stock.cpp`   
-    - [ ] 看可以推广到K的思路(local Opt VS global Opt)[http://blog.csdn.net/linhuanmars/article/details/23236995]  
+    - [ ] 看可以推广到K的思路[local Opt VS global Opt](http://blog.csdn.net/linhuanmars/article/details/23236995)  
     - [ ] 总结从1～∞的情况blog之  
 - [ ] `Word_Search.py` 和 `Word_Search_copyPath.py` 以及 cpp 版本整理写一篇blog. DFS状态，复制/共享<=>面向过程/函数式<=>效率/简洁   
 - [ ] `Generate_Parentheses_bruteForce.py` why insert `()` every where make all valid parentheses?  
