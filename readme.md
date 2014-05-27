@@ -3,10 +3,27 @@ LeetCode
 
 Progress
 --------
-> 92/151
+> 94/151
 
 Other Solutions
 ---------------
+
+<div>
+<script>
+  (function() {
+    var cx = '011300011874908098858:-gv4qvyceza';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
 - [Code_Ganker](http://blog.csdn.net/linhuanmars?viewmode=contents)  
 - [iphkwan](https://github.com/iphkwan/leetcode)  
 - [fanfank](https://github.com/fanfank/leetcode)  
@@ -185,6 +202,9 @@ TODO
 - [ ] `Two_Sum.py` better solution?  
 - [ ] `Unique_Binary_Search_Trees_II_DP.cpp`  
 - [ ] `Sort_Colors_1pass.cpp `  
+- [ ] `Sort_List.cpp` 
+    - [ ] revise quickSort version; 
+    - [ ] write merge sort version;
 - [ ] `Linked_List_Cycle_II.cpp` review,discuss  
 - [ ] `Simplify_Path.py` cpp version  
 - [ ] iterative tree-like struct traverse  

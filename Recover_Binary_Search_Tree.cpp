@@ -15,30 +15,30 @@ struct TreeNode {
 };
 class Solution {
     int n=0;
-    TreeNode* N[2];
+    TreeNode* mistakes[2];
+    TreeNode *pre=nullptr;
     void findMistake(TreeNode *root) {
-        if(root==NULL || (root->left==NULL && root->right==NULL)) return;
-        if(root->left!=NULL) {
-            TreeNode* &left = root->left;
-            if(root->val < left->val) {
-                N[n]=left;
-                if(++n==2) return;
+        if(root==nullptr) return;
+        
+        findMistake(root->left);
+        if(pre!=nullptr && pre->val>root->val) {
+            if(n==0) { // first reversed pair
+                mistakes[0] = pre;
+                mistakes[1] = root;
+                n++;
             }
-            else findMistake(left);
-        }
-        if(root->right!=NULL) {
-            TreeNode* &right = root->right;
-            if(root->val > right->val) {
-                N[n]=right;
-                if(++n==2) return;
+            else { // second reversed pair
+                mistakes[1] = root;
             }
-            else findMistake(right);
         }
+        pre = root;
+        findMistake(root->right);
+
     }
 public:
     void recoverTree(TreeNode *root) {
         findMistake(root);
-        swap(N[0]->val,N[1]->val);
+        swap(mistakes[0]->val,mistakes[1]->val);
     }
 };
 int main() {
