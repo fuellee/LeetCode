@@ -1,24 +1,6 @@
 #include <iostream>
+#include "ListNode.hpp"
 using namespace std;
-// Definition for singly-linked list.
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x, ListNode *next=nullptr) : val(x), next(next) {}
-    void show() {
-        if(this==nullptr){
-            cout<<"|";
-            return;
-        }
-        else if(this->next){
-            cout<<this->val<<"->";
-            this->next->show();
-        }
-        else {
-            cout<<this->val<<endl;
-        }
-    }
-};
 
 class Solution {
 public:

@@ -6,24 +6,9 @@
  */
 
 #include "print.hpp"
+#include "ListNode.hpp"
 using namespace std;
 
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x, ListNode *next=NULL) : val(x), next(next) {}
-    void show() {
-        if(this==nullptr) {
-            cout<<"|\n";
-            return;
-        }
-        if(this->next!=nullptr){
-            cout<<this->val<<"->"; 
-            this->next->show();
-        }
-        else cout<<this->val<<endl;
-    }
-};
 
 class Solution {
 public:
@@ -64,6 +49,7 @@ int main() {
     // s.reverse(l0)->show();
     s.reorderList(l0);
     l0->show();
+    cout<<*l0;
     auto l = N(1,N(2,N(3,N(4,N(5)))));
     // // s.reverse(l)->show();
     s.reorderList(l);

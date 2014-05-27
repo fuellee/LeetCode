@@ -2,22 +2,9 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
+#include "ListNode.hpp"
 using namespace std;
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
-    ListNode(int x,ListNode *next) : val(x), next(next) {}
-    void show(){
-        ListNode *cur=this;
-        if(cur==nullptr) return;
-        while(cur->next!=nullptr){
-            cout<<cur->val<<"->";
-            cur=cur->next;
-        }
-        cout<<cur->val<<endl;
-    }
-};
+
 class Solution {
     ListNode* lessDumyHead = new ListNode(0);
     ListNode* moreDumyHead = new ListNode(0);
