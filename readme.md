@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 94/151
+> 98/151
 
 Other Solutions
 ---------------
@@ -191,6 +191,7 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 TODO
 ----
 
+- [ ] `Divide_Two_Integers.cpp` abc() 结果是负数...
 - [ ] `First_Missing_Positive.cpp` review  
 - [ ] `Best_Time_to_Buy_and_Sell_Stock.cpp`   
     - [ ] 看可以推广到K的思路[local Opt VS global Opt](http://blog.csdn.net/linhuanmars/article/details/23236995)  
@@ -204,7 +205,8 @@ TODO
 - [ ] `Sort_Colors_1pass.cpp `  
 - [ ] `Sort_List.cpp` 
     - [ ] revise quickSort version; 
-    - [ ] write merge sort version;
+    - [x] write merge sort version;
+    - [ ] iterative ?
 - [ ] `Linked_List_Cycle_II.cpp` review,discuss  
 - [ ] `Simplify_Path.py` cpp version  
 - [ ] iterative tree-like struct traverse  
