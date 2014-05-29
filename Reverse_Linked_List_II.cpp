@@ -13,7 +13,7 @@ class Solution {
 public:
     ListNode *reverseFrom(ListNode *head, int n) { // n: num of nodes need to be reversed
         ListNode *pre=nullptr,*cur=head,*next;
-        while(n--){
+        while(n-- && cur){
             next = cur->next;
             cur->next = pre;
             pre = cur;
