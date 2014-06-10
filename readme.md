@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 100/151
+> 102/151
 
 Other Solutions
 ---------------
@@ -181,7 +181,7 @@ TODO
 - [ ] `First_Missing_Positive.cpp` review  
 - [ ] `Best_Time_to_Buy_and_Sell_Stock.cpp`   
     - [ ] 看可以推广到K的思路[local Opt VS global Opt](http://blog.csdn.net/linhuanmars/article/details/23236995)  
-        - [ ] 用这个思路重写`Maximum_Subarray_DP.cpp`  
+        - [ ] 用这个思路重写[`Maximum_Subarray_DP.cpp`](http://blog.csdn.net/linhuanmars/article/details/21314059)  
     - [ ] 总结从1～∞的情况blog之  
 - [ ] `Word_Search.py` 和 `Word_Search_copyPath.py` 以及 cpp 版本整理写一篇blog. DFS状态，复制/共享<=>面向过程/函数式<=>效率/简洁   
 - [ ] `Generate_Parentheses_bruteForce.py` why insert `()` every where make all valid parentheses?  
@@ -196,6 +196,14 @@ TODO
     - [ ] iterative ?
 - [ ] `Linked_List_Cycle_II.cpp` review,discuss  
 - [ ] `Simplify_Path.py` cpp version  
+- [ ] binary tree traversal
+[PreOrder](http://blog.csdn.net/linhuanmars/article/details/21428647),
+[InOrder](http://blog.csdn.net/linhuanmars/article/details/20187257),
+[PostOrder](http://blog.csdn.net/linhuanmars/article/details/22009351),
+[wiki](http://en.wikipedia.org/wiki/Threaded_binary_tree)  
+    - [x] recursive traversal
+    - [ ] iterative traversal with stack
+    - [ ] Threaded binary tree (morris ...)
 - [ ] iterative tree-like struct traverse  
     - [x] write code  
     - [ ] read [Binary Search Tree In-Order Traversal Iterative Solution][inOrder],[Binary Tree Post-Order Traversal Iterative Solution][postOrder]  
