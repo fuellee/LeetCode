@@ -14,4 +14,4 @@ class Solution:
         res = map(lambda x,y:compose(x,*y), \
                    N_ , \
                    [['M', '', ''], ['C', 'D', 'M'], ['X', 'L', 'C'], ['I', 'V', 'X']])
-        return ''.join(res)        
+        return ''.join(res)
