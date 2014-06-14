@@ -13,3 +13,6 @@ class Solution:
             com(acc,i+1)
     com([],1)
     return res
+
+if __name__=="__main__":
+    print Solution().combine(5,3)

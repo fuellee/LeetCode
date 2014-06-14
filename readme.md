@@ -3,15 +3,15 @@ LeetCode
 
 Progress
 --------
-> 110/151
+> 111/151
 
 Other Solutions
 ---------------
 
 [自定义搜索LeetCode](https://www.google.com/cse/publicurl?cx=011300011874908098858:-gv4qvyceza)  
 - [水中的鱼](http://fisherlei.blogspot.com/) *C++*,有详细思路解释  
-- [kitt's blog](http://chaoren.is-programmer.com/categories/9841/posts)*python*,部分有解释   
-- [Code_Ganker](http://blog.csdn.net/linhuanmars?viewmode=contents)*Java*,部分有解释  
+- [kitt's blog](http://chaoren.is-programmer.com/categories/9841/posts) *python*,部分有解释   
+- [Code_Ganker](http://blog.csdn.net/linhuanmars?viewmode=contents) *Java*,部分有解释  
 - [iphkwan](https://github.com/iphkwan/leetcode)  
 - [fanfank](https://github.com/fanfank/leetcode)  
 
@@ -178,7 +178,12 @@ TODO
 ----
 
 - [ ] `Divide_Two_Integers.cpp` abc() 结果是负数...
-- [ ] `Permutation II` none trival solution (not set, constant memory, no next_permutation, just recurrsion with extra-branching rules dealing with duplicates)  
+- [x] `Permutation II` none trival solution (not set, constant memory, no next_permutation, just recurrsion with extra-branching rules dealing with duplicates)  
+- [ ] `Permutation II` amortize solution like `Combinations.py`
+- [ ] write summation of Permutation
+    - $[e| e <- lst]*Permutation(lst-e)$ branch: take every element as head element 
+    - insert e everywhere
+    - next_permutation
 - [ ] list reverse 类总结，写blog, 介绍我的reverseFrom函数   
 - [ ] `First_Missing_Positive.cpp` review  
 - [ ] `Best_Time_to_Buy_and_Sell_Stock.cpp`   
