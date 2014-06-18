@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 111/151
+> 115/151
 
 Other Solutions
 ---------------
@@ -177,11 +177,12 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 TODO
 ----
 
+- [x] `Substring_with_Concatenation_of_All_Words_bruteForce.py` non-trival solution (brute force: `O(len(S)*Len(L[0]))` 832ms) (not found)  
 - [ ] `Divide_Two_Integers.cpp` abc() 结果是负数...
 - [ ] [`Single_Number_II.cpp`](https://oj.leetcode.com/discuss/857/constant-space-solution)
 - [x] `Permutation II` none trival solution (not set, constant memory, no next_permutation, just recurrsion with extra-branching rules dealing with duplicates)  
 - [ ] `Permutation II` amortize solution like `Combinations.py`
-- [ ] write summation of Permutation
+- [ ] write summation about Permutation
     - $[e| e <- lst]*Permutation(lst-e)$ branch: take every element as head element 
     - insert e everywhere
     - next_permutation
