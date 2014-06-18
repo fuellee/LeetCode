@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 115/151
+> 117/151
 
 Other Solutions
 ---------------
@@ -229,6 +229,7 @@ TODO
         + Earley parser implementaion from *Programming Languages*;  [another python implemetation](https://github.com/tomerfiliba/tau/blob/master/earley3.py)  
 - [x] 刷过的题目整理丢github  
 - [x] `Populating_Next_Right_Pointers_in_Each_Node.cpp` too slow and looks bad for myself, check other's [implemetation](http://leetcode.com/2010/03/first-on-site-technical-interview.html)  
+- [ ] `Longest_Substring_Without_Repeating_Characters.cpp` 用[数组当索引](http://fisherlei.blogspot.com/2012/12/leetcode-longest-substring-without.html)重新实现一次  
 
 [inOrder]:http://leetcode.com/2010/04/binary-search-tree-in-order-traversal.html
 [postOrder]:http://leetcode.com/2010/10/binary-tree-post-order-traversal.html

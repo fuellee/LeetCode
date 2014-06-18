@@ -11,28 +11,19 @@ using namespace std;
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        const size_t len = s.size();
-        if(len<=1) 
-            return len;
-
         set<char> subs;
-        size_t L=0,offset=0, maxOffset=1;
-        for(size_t R=L; R<len; R++) {
-            subs.insert(s[R]);
-            if(subs.size()<offset+1) {
-                for(; L<len && s[L]!=s[R]; L++) {
+        size_t L=0, maxSubsLen=0;
+        for(size_t R=L; R<s.size(); R++) {
+            if(subs.find(s[R])!=subs.end()) { // s[R] is repeated
+                for(; L<s.size() && s[L]!=s[R]; L++)
                     subs.erase(s[L]);
-                }
-                if(L!=R) {
-                    L++; // point to the first element that is not equal to s[R]
-                }
-                offset = R-L+1;
+                L++; // point to the first element that is not equal to s[R]
             }
-            else {
-                offset++;
-                maxOffset = max(maxOffset,offset);
-            }
+            else 
+                maxSubsLen = max(maxSubsLen,R-L+1);
+
+            subs.insert(s[R]);
         }
-        return maxOffset;
+        return maxSubsLen;
     }
 };
