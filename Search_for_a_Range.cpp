@@ -13,11 +13,11 @@ class Solution {
 public:
     vector<int> searchRange(int A[], int n, int target) {
         int* L = lower_bound(A,A+n,target);
-        int* R = upper_bound(A,A+n,target);
-        R--;
-        if(L==A+n) return {-1,-1};
-        else if(*L==target && *R==target) return {int(L-A),int(R-A)};
-        else return {-1,-1};
+        int* R = upper_bound(A,A+n,target)-1;
+        if(L!=A+n && *L==target) 
+            return {int(L-A),int(R-A)};
+        else 
+            return {-1,-1};
     }
 };
 int main() {

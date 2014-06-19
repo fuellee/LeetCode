@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 120/151
+> 122/151
 
 Other Solutions
 ---------------
@@ -177,6 +177,9 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 TODO
 ----
 
+- [ ] `Longest_Common_Prefix.cpp`
+    - [ ] Dynamic Programming solution
+    - [ ] blog
 - [x] `Substring_with_Concatenation_of_All_Words_bruteForce.py` non-trival solution (brute force: `O(len(S)*Len(L[0]))` 832ms) (not found)  
 - [ ] `Divide_Two_Integers.cpp` abc() 结果是负数...
 - [ ] [`Single_Number_II.cpp`](https://oj.leetcode.com/discuss/857/constant-space-solution)
