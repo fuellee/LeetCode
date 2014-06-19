@@ -8,7 +8,7 @@ class Solution:
         else:
             minlen = min(map(len,strs))
             for i in range(minlen):
-                for n in range(1,len(strs)):
-                    if strs[n][i]!=strs[0][i]:
-                        return strs[0][:i]
+                for s in strs:
+                    if s[i]!=strs[0][i]:
+                        return s[:i]
             return strs[0][:minlen]
