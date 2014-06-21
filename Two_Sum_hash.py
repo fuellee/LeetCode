@@ -22,6 +22,8 @@ class Solution:
                 else:
                     return sorted((ps1[0]+1, ps2[0]+1))
 
-print Solution().twoSum([2, 7, 11, 15],9)
-print Solution().twoSum([0,4,3,0], 0)
-print Solution().twoSum([-3,4,3,90], 0)
+if __name__ == "__main__":
+    print Solution().twoSum([2, 7, 11, 15],9)
+    print Solution().twoSum([0,4,3,0], 0)
+    print Solution().twoSum([-3,4,3,90], 0)
+    print Solution().twoSum([150,24,79,50,88,345,3],200)

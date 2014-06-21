@@ -177,7 +177,7 @@ from http://blog.csdn.net/fightforyourdream/article/details/12705509
 TODO
 ----
 
-- [ ] `Longest_Common_Prefix.cpp`
+- [ ] `Longest_Palindromic_Substring.cpp`
     - [ ] Dynamic Programming solution
     - [ ] blog
 - [x] `Substring_with_Concatenation_of_All_Words_bruteForce.py` non-trival solution (brute force: `O(len(S)*Len(L[0]))` 832ms) (not found)  
@@ -199,7 +199,7 @@ TODO
 - [ ] `Generate_Parentheses_bruteForce.py` why insert `()` every where make all valid parentheses?  
 - [ ] `Combination_Sum_II.cpp` condition not understand  
 - [ ] `Combination_Sum_tailcall_opt.cpp` too slow  
-- [ ] `Two_Sum.py` better solution?  
+- [x] `Two_Sum.py` better solution?  
 - [ ] `Unique_Binary_Search_Trees_II_DP.cpp`  
 - [ ] `Sort_Colors_1pass.cpp `  
 - [ ] `Sort_List.cpp` 

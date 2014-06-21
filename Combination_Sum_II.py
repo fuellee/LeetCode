@@ -26,6 +26,6 @@ class Solution:
         comS(0,[],target)
         return res
 
-print Solution().combinationSum([2,3,6,7],7)
+print Solution().combinationSum2([2,3,6,7],7)
 # print Solution().combinationSum2([1],1)
-print Solution().combinationSum([1,1,1,1,2], 2)
+print Solution().combinationSum2([1,1,1,1,2], 2)
