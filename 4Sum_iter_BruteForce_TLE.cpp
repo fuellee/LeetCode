@@ -41,8 +41,6 @@ int main() {
     cout<<s.fourSum(num2, -7)<<endl;
     vector<int> num3 {1,1,1,1,1,1,2,2};
     cout<<s.fourSum(num3, 5)<<endl;
-    vector<int> num4 {-1,-5,-5,-3,2,5,0,4};
-    cout<<s.fourSum(num4, -7)<<endl;
 
     return 0;
 }

@@ -3,7 +3,7 @@ LeetCode
 
 Progress
 --------
-> 122/151
+> 125/151
 
 Other Solutions
 ---------------

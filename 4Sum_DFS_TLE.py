@@ -35,3 +35,5 @@ if __name__ == "__main__":
     fourSum = Solution().fourSum
     print fourSum([1,0,-1,0,-2,2],0)
     print fourSum([-3,-2,-1,0,0,1,2,3], 0)
+    print fourSum([-1,-5,-5,-3,2,5,0,4],-7)
+    print fourSum([1,1,1,1,1,1,2,2],5)

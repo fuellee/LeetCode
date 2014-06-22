@@ -49,12 +49,12 @@ public:
         // return res;
     } 
 
-    vector<vector<int> > threeSum(vector<int> &num) {
+    vector<vector<int> > threeSum(vector<int> &num) { //pass
         res.clear();
         N_Sum(num,3,0);
         return res;
     }
-    vector<vector<int> > fourSum(vector<int> &num, int target) {
+    vector<vector<int> > fourSum(vector<int> &num, int target) { //TLE
         res.clear();
         N_Sum(num,4,target);
         return res;

@@ -1,10 +1,13 @@
 /*
- * 4Sum.cpp
+ * 4Sum_2Points_dupGuard.cpp
  * Copyright (C) 2014 fuel <fuel@fuel-3330>
  *
  * Distributed under terms of the MIT license.
  */
 
+// combine `4Sum_iter_prune.cpp` and `Two_Sum_2Points_dupGuard.cpp`
+// use Two_sum linear scan instead of 2-level of for-loops
+// generalized from `3Sum_2Points_dupGuard.cpp`
 #include <iostream>
 #include <algorithm>
 #include <FooBee/out>
@@ -32,22 +35,31 @@ public:
                 if(S2+Max*2<target) continue; // prune
                 if(S2+Min*2>target) break;
 
-                for(int i3=i2+1; i3<N-1; i3++){
-                    if(i3!=i2+1 && num[i3]==num[i3-1]) continue; // guard for duplicates
-
-                    int S3=S2+num[i3];
-                    if(S3+Max<target) continue; // prune
-                    if(S3+Min>target) break;
-
-                    for(int i4=i3+1; i4<N; i4++)
-                        if(i4!=i3+1 && num[i4]==num[i4-1]) continue;  // guard for duplicates
-                        else if(S3+num[i4]==target) res.push_back({num[i1],num[i2],num[i3],num[i4]}); 
-                } 
+                int L=i2+1, R=N-1;
+                while (L < R) {
+                    if(L!=i2+1 && num[L]==num[L-1]){ // guard for duplicates (L)
+                        L++;
+                        continue; 
+                    } 
+                    if(R!=N-1 && num[R]==num[R+1]){ // guard for duplicates (R)
+                        R--;
+                        continue; 
+                    }
+                    int sum4 = S2+num[L]+num[R];
+                    if (sum4 < target) L++;
+                    else if (sum4 > target) R--;
+                    else {
+                        res.push_back({num[i1],num[i2],num[L],num[R]});
+                        L++;
+                        R--;
+                    }
+                }
             } 
         } 
         return res;
     }
 };
+
 int main() {
     Solution s;
     vector<int> num {1,0,-1,0,-2,2};
