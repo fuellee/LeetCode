@@ -13,13 +13,14 @@ class Solution:
         N = len(num)
         if N<4: return []
         num.sort()
-        res = set()
+        res = []
         sum2Pair = collections.defaultdict(list)
         # 2-sum to list of index-pairs , int->[(int,int)]
 
         # for all uniq pair of nums (i,j), collect two-sum
         for i in xrange(N-1):
             for j in xrange(i+1,N):
+                if j!=i+1 and num[j]==num[j-1]: continue
                 sum2Pair[num[i]+num[j]].append((i,j))
 
         sum2s = sorted(sum2Pair.keys())
@@ -31,15 +32,17 @@ class Solution:
             sum4 = sum2s[L]+sum2s[R]
             if(sum4==target):
                 # print sum2Pair[sum2s[L]],sum2Pair[sum2s[R]]
-                for i3,i4 in sum2Pair[sum2s[R]]:
-                    for i1,i2 in sum2Pair[sum2s[L]]:
+                for i1,i2 in sum2Pair[sum2s[L]]:
+                    if i1!=0 and num[i1]==num[i1-1]: continue
+                    for i3,i4 in sum2Pair[sum2s[R]]:
                         if i2<i3: # valid quadruplet
-                            res.add((num[i1],num[i2],num[i3],num[i4]))
+                            if i3!=i2+1 and num[i3]==num[i3-1]: continue
+                            res.append([num[i1],num[i2],num[i3],num[i4]])
                 L+=1;R-=1
             elif(sum4<target): L+=1
             else: R-=1
 
-        return map(list,res)
+        return res
 
 if __name__ == "__main__":
     fourSum = Solution().fourSum

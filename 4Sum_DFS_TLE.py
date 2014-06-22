@@ -24,7 +24,7 @@ class Solution:
                 return
             else:
                 comS(start+1,acc+[num[start]],target-num[start])
-                for i in range(start+1,N):
+                for i in xrange(start+1,N):
                     if(num[i]!=num[i-1]):
                         comS(i+1, acc+[num[i]], target-num[i])
 

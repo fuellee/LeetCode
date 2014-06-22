@@ -20,9 +20,9 @@ class Solution:
         D = collections.defaultdict(list)
 
         # for all uniq pair of nums (nums[i1],num[i2]), collect two-sum
-        for i1 in range(N-1):
+        for i1 in xrange(N-1):
             if i1==0 or num[i1]!=num[i1-1]:
-                for i2 in range(i1+1,N):
+                for i2 in xrange(i1+1,N):
                     if i2==i1+1 or num[i2]!=num[i2-1]:
                         D[num[i1]+num[i2]].append((num[i1],num[i2]))
 
