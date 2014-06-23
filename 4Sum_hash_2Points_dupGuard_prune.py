@@ -13,16 +13,23 @@ class Solution:
         N = len(num)
         if N<4: return []
         num.sort()
+        Min,Max = num[0],num[-1];
         res = []
         sum2Pair = collections.defaultdict(list)
         # 2-sum to list of index-pairs , int->[(int,int)]
 
         # for all uniq pair of nums (i,j), collect two-sum
         for i in xrange(N-1):
+            if(num[i]+Max*3<target): continue # prune
+            if(num[i]+Min*3>target): break
             for j in xrange(i+1,N):
                 if j!=i+1 and num[j]==num[j-1]: continue
-                sum2Pair[num[i]+num[j]].append((i,j))
 
+                S2=num[i]+num[j];
+                if(S2+Max*2<target): continue # prune
+                if(S2+Min*2>target): break
+                sum2Pair[num[i]+num[j]].append((i,j))
+        # print sum2Pair
         sum2s = sorted(sum2Pair.keys())
 
         # do two-sum on two-sums

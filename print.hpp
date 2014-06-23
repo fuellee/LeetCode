@@ -5,6 +5,9 @@
 #include <set>
 #include <unordered_set>
 
+template <typename T1, typename T2>
+std::ostream &operator<<(std::ostream &out, const std::pair<T1,T2> &p);
+
 template <typename T>
 std::ostream &operator<<(std::ostream &out, const std::vector<T> &v);
 
@@ -21,6 +24,16 @@ std::ostream &operator<<(std::ostream &out, const std::unordered_set<T> &s);
 template <typename T>
 void operator+=(std::vector<T> &v1, const std::vector<T> &v2) {
     v1.insert(v1.end(), v2.begin(), v2.end());
+}
+
+template <typename T1, typename T2>
+std::ostream &operator<<(std::ostream &out, const std::pair<T1,T2> &p) {
+    out<<"(";
+    out<<p.first;
+    out<<", ";
+    out<<p.second;
+    out<<")";
+    return out;
 }
 
 template <typename T>

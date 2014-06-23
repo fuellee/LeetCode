@@ -46,7 +46,7 @@ public:
                         continue; 
                     }
                     int sum4 = S2+num[L]+num[R];
-                    if (sum4 < target) L++;
+                    if      (sum4 < target) L++;
                     else if (sum4 > target) R--;
                     else {
                         res.push_back({num[i1],num[i2],num[L],num[R]});

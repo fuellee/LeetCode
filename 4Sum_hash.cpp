@@ -18,7 +18,7 @@ public:
         if(N<4) return {};
         sort(num.begin(),num.end());
         set<vector<int> > res;
-        map<int,vector<pair<int,int> > > sum2Pair;
+        unordered_map<int,vector<pair<int,int> > > sum2Pair;
         
         for (int i1=0; i1<N-3; ++i1)
             for (int i2=i1+1; i2<N-2; ++i2)
