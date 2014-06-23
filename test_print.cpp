@@ -5,10 +5,16 @@
  * Distributed under terms of the MIT license.
  */
 
-#include "print.hpp"
+// #include "print.hpp"
+#include <FooBee/out>
 using namespace std;
 
 int main() {
+    cout<<"\nprint pairs\n";
+    cout<<"======================\n";
+    pair<int,int> p0 {};
+    cout<<p0<<endl;
+
     cout<<"\nprint vectors\n";
     cout<<"======================\n";
     vector<vector<int> > v0 {};
