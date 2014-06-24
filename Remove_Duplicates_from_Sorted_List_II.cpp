@@ -7,18 +7,30 @@ public:
     ListNode *deleteDuplicates(ListNode *head) {
         if(head==nullptr || head->next==nullptr) return head;
         else {
-            auto dumy = new ListNode(0);
-            dumy->next = head;
-            ListNode *preNewEnd=dumy,*curr=dumy;
-            while(curr->next){
-                if(preNewEnd->next->val!=curr->val){
-                    cout<<preNewEnd->val;
-                    preNewEnd->next=curr;
-                    preNewEnd = preNewEnd->next;
-                }
-                curr = curr->next;
-            }
-            return dumy->next;
+            ListNode dumy(0);  
+            dumy.next = head;  
+            ListNode *pre = &dumy, *cur = head;  
+            while(cur!=nullptr)  {  
+                bool isDup = false;  
+                while(cur->next!=nullptr && cur->val == cur->next->val) {  
+                    isDup = true;  
+                    ListNode *tmp = cur;  
+                    cur = cur->next;  
+                    delete tmp;  
+                }  
+                if(isDup) {  
+                    ListNode *tmp = cur;  
+                    cur = cur->next;  
+                    delete tmp;  
+                    continue;  
+                }  
+                pre->next = cur;  
+                pre = pre->next;  
+                cur= cur->next;  
+            }  
+            pre->next = cur;  
+            ListNode *tmp = dumy.next;  
+            return tmp;     
         }
     }
 };
